@@ -20,7 +20,8 @@ public class HelloController {
                 new Utils.ProducerWithThrow<Image>() {
                     @Override
                     public Image apply() {
-                        return new Image("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+                        // get an image with a delay of 5 seconds
+                        return new Image("https://ikasten.io/image.php?d=5");
                     }
                 },
                 new Utils.Consumer<Image>() {
