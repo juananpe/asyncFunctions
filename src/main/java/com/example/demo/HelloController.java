@@ -15,11 +15,8 @@ public class HelloController {
     @FXML
     protected void onHelloButtonClick() {
 
-
-        Utils.asyncTask(
-                () -> new Image("https://ikasten.io/image.php?d=5"),
-                image -> picture.setImage(image));
-
+        Image image = new Image("https://ikasten.io/image.php?d=5");
+        picture.setImage(image);
         welcomeText.setText("Welcome to JavaFX Application!"
 
         );
