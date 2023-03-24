@@ -16,10 +16,8 @@ public class HelloController {
     protected void onHelloButtonClick() {
 
 
-
         Utils.asyncTask(
-                () ->
-                        new Image("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"),
+                () -> new Image("https://ikasten.io/image.php?d=5"),
                 image -> picture.setImage(image));
 
         welcomeText.setText("Welcome to JavaFX Application!"
